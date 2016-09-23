@@ -5,3 +5,7 @@
   Created by Infraestructura on 23/09/16.
   Copyright © 2016 Nitrogena. All rights reserved.
 */
+
+//Se ponen llaves, valor
+
+"Titulo_pantalla_inicial" = "¡Bienvenidos!";
