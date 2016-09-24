@@ -85,7 +85,16 @@ class TableViewController: UITableViewController {
         //SE HIZO BIDIMENSIONAL
         //cell.textLabel!.text = (self.elArreglo![indexPath.row] as! String)
         
-        cell.textLabel!.text = (self.elArreglo![indexPath.section][indexPath.row] as! String)
+        
+        //PARA PREVENIR ERROR CON TARGET 8
+        let item = self.elArreglo![indexPath.section] as! NSArray
+        
+        cell.textLabel!.text = (item[indexPath.row] as! String)
+        
+        //SE COMENTO EL DE ABAJO PARA USAR EL DE ARRIBA QUE ES PARA PREVENIR ERROR EN UN TARGET 8
+        
+        //cell.textLabel!.text = (self.elArreglo![indexPath.section][indexPath.row] as! String)
+        
         
         return cell
     }
@@ -95,7 +104,14 @@ class TableViewController: UITableViewController {
     
     //ESTO DA EL ESPACIO ENTRE LAS SECCIONES, PARA ESO USAMOS UN ARREGLO BIDIMENSIONAL
     override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 30.0
+        return 60.0
+    }
+    
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section == 0{
+            return "Menu"
+        }
+        return "Informacion General"
     }
     
     
