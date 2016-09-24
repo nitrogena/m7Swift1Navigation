@@ -15,6 +15,15 @@
 		505AFF9C1D95B707006148C8 /* Jurassic Park.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 505AFF9B1D95B707006148C8 /* Jurassic Park.ttf */; };
 		505AFFA01D95C0FF006148C8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 505AFFA21D95C0FF006148C8 /* Localizable.strings */; };
 		505AFFA61D95CD52006148C8 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505AFFA51D95CD52006148C8 /* ViewController2.swift */; };
+		50D8D4D81D967E8E00CEFCC4 /* hoy.png in Resources */ = {isa = PBXBuildFile; fileRef = 50D8D4D51D967E8E00CEFCC4 /* hoy.png */; };
+		50D8D4D91D967E8E00CEFCC4 /* hoy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50D8D4D61D967E8E00CEFCC4 /* hoy@2x.png */; };
+		50D8D4DA1D967E8E00CEFCC4 /* hoy@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50D8D4D71D967E8E00CEFCC4 /* hoy@3x.png */; };
+		50D8D4E01D96870D00CEFCC4 /* 01.png in Resources */ = {isa = PBXBuildFile; fileRef = 50D8D4DB1D96870D00CEFCC4 /* 01.png */; };
+		50D8D4E11D96870D00CEFCC4 /* 02.png in Resources */ = {isa = PBXBuildFile; fileRef = 50D8D4DC1D96870D00CEFCC4 /* 02.png */; };
+		50D8D4E21D96870D00CEFCC4 /* 03.png in Resources */ = {isa = PBXBuildFile; fileRef = 50D8D4DD1D96870D00CEFCC4 /* 03.png */; };
+		50D8D4E31D96870D00CEFCC4 /* 04.png in Resources */ = {isa = PBXBuildFile; fileRef = 50D8D4DE1D96870D00CEFCC4 /* 04.png */; };
+		50D8D4E41D96870D00CEFCC4 /* 05.png in Resources */ = {isa = PBXBuildFile; fileRef = 50D8D4DF1D96870D00CEFCC4 /* 05.png */; };
+		50D8D4E61D96911300CEFCC4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D8D4E51D96911300CEFCC4 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +39,15 @@
 		505AFFA31D95C120006148C8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		505AFFA41D95C581006148C8 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		505AFFA51D95CD52006148C8 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController2.swift; path = ../ViewController2.swift; sourceTree = "<group>"; };
+		50D8D4D51D967E8E00CEFCC4 /* hoy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hoy.png; sourceTree = "<group>"; };
+		50D8D4D61D967E8E00CEFCC4 /* hoy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hoy@2x.png"; sourceTree = "<group>"; };
+		50D8D4D71D967E8E00CEFCC4 /* hoy@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hoy@3x.png"; sourceTree = "<group>"; };
+		50D8D4DB1D96870D00CEFCC4 /* 01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01.png; sourceTree = "<group>"; };
+		50D8D4DC1D96870D00CEFCC4 /* 02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02.png; sourceTree = "<group>"; };
+		50D8D4DD1D96870D00CEFCC4 /* 03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 03.png; sourceTree = "<group>"; };
+		50D8D4DE1D96870D00CEFCC4 /* 04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 04.png; sourceTree = "<group>"; };
+		50D8D4DF1D96870D00CEFCC4 /* 05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 05.png; sourceTree = "<group>"; };
+		50D8D4E51D96911300CEFCC4 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +64,7 @@
 		505AFF7D1D95A856006148C8 = {
 			isa = PBXGroup;
 			children = (
+				50D8D4E51D96911300CEFCC4 /* TableViewController.swift */,
 				505AFFA21D95C0FF006148C8 /* Localizable.strings */,
 				505AFF9D1D95B7A4006148C8 /* assets */,
 				505AFF881D95A856006148C8 /* NavigationExample */,
@@ -78,6 +97,14 @@
 		505AFF9D1D95B7A4006148C8 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				50D8D4DB1D96870D00CEFCC4 /* 01.png */,
+				50D8D4DC1D96870D00CEFCC4 /* 02.png */,
+				50D8D4DD1D96870D00CEFCC4 /* 03.png */,
+				50D8D4DE1D96870D00CEFCC4 /* 04.png */,
+				50D8D4DF1D96870D00CEFCC4 /* 05.png */,
+				50D8D4D71D967E8E00CEFCC4 /* hoy@3x.png */,
+				50D8D4D61D967E8E00CEFCC4 /* hoy@2x.png */,
+				50D8D4D51D967E8E00CEFCC4 /* hoy.png */,
 				505AFF9B1D95B707006148C8 /* Jurassic Park.ttf */,
 			);
 			name = assets;
@@ -142,9 +169,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50D8D4E41D96870D00CEFCC4 /* 05.png in Resources */,
+				50D8D4E01D96870D00CEFCC4 /* 01.png in Resources */,
+				50D8D4DA1D967E8E00CEFCC4 /* hoy@3x.png in Resources */,
+				50D8D4D81D967E8E00CEFCC4 /* hoy.png in Resources */,
 				505AFFA01D95C0FF006148C8 /* Localizable.strings in Resources */,
 				505AFF941D95A856006148C8 /* LaunchScreen.storyboard in Resources */,
+				50D8D4E11D96870D00CEFCC4 /* 02.png in Resources */,
+				50D8D4E21D96870D00CEFCC4 /* 03.png in Resources */,
+				50D8D4D91D967E8E00CEFCC4 /* hoy@2x.png in Resources */,
 				505AFF911D95A856006148C8 /* Assets.xcassets in Resources */,
+				50D8D4E31D96870D00CEFCC4 /* 04.png in Resources */,
 				505AFF8F1D95A856006148C8 /* Main.storyboard in Resources */,
 				505AFF9C1D95B707006148C8 /* Jurassic Park.ttf in Resources */,
 			);
@@ -160,6 +195,7 @@
 				505AFF8C1D95A856006148C8 /* ViewController.swift in Sources */,
 				505AFF8A1D95A856006148C8 /* AppDelegate.swift in Sources */,
 				505AFFA61D95CD52006148C8 /* ViewController2.swift in Sources */,
+				50D8D4E61D96911300CEFCC4 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +359,7 @@
 				505AFF9A1D95A856006148C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
