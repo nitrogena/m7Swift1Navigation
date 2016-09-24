@@ -14,14 +14,25 @@ class TableViewController: UITableViewController {
     //DECLARAMOS ARRAY, SIGNO DE INTERROGACION PARA NO INICIALIZARLA AQUI
     var elArreglo:NSArray?
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.elArreglo = ["Bebidas", "Sopas", "Entradas", "Plato fuerte", "Postre"]
+        
+        //LO DECLARAMOS ABAJO COMO BIDIMENSIONAL
+        //self.elArreglo = ["Bebidas", "Sopas", "Entradas", "Plato fuerte", "Postre"]
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        
+        self.elArreglo = [["Bebidas", "Sopas", "Entradas", "Plato fuerte", "Postre"], ["Servicios", "Contacto", "Sugerencia"]]
+        //Primero se indica la seccion y luego dentro el row
+        
+        
     }
     
     override func viewWillAppear(animated: Bool){
@@ -39,7 +50,11 @@ class TableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         //VA A TENER UNA SECCION LA CUAL PUEDE TENER VARIAS FILAS O CELDAS, NO EXISTEN COLUMNAS
-        return 1
+        
+        //SE HIZO BIDIMENSIONAL Y SE QUITO QUE FUERA UNO EL RETURN
+        //return 1
+        
+        return self.elArreglo!.count
     }
 
     //PUEDO TENER MUCHOS tableView, para las ipad
@@ -47,7 +62,11 @@ class TableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         //SIGNO DE ADMIRACION PORQUE YA SE QUE LA VARIABLE EXISTE, Y ES EL NUMERO DE FILAS QUE VOY A TENER
-        return self.elArreglo!.count
+        
+        //SE HIZO BIDIMENSIONAL
+        //return self.elArreglo!.count
+        
+        return self.elArreglo![section].count
     }
 
     /**/
@@ -62,10 +81,24 @@ class TableViewController: UITableViewController {
         
         // Configure the cell...
         //as! LOS ARREGLOS PUEDEN TENER LO QUE SE QUIERA, COMBINADOS, ESTOY SEGURO QUE SE PUEDE CONVERTIR A STRING
-        cell.textLabel!.text = (self.elArreglo![indexPath.row] as! String)
+        
+        //SE HIZO BIDIMENSIONAL
+        //cell.textLabel!.text = (self.elArreglo![indexPath.row] as! String)
+        
+        cell.textLabel!.text = (self.elArreglo![indexPath.section][indexPath.row] as! String)
+        
         return cell
     }
     /**/
+    
+    
+    
+    //ESTO DA EL ESPACIO ENTRE LAS SECCIONES, PARA ESO USAMOS UN ARREGLO BIDIMENSIONAL
+    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 30.0
+    }
+    
+    
 
     /*
     // Override to support conditional editing of the table view.
