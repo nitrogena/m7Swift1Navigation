@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -23,19 +23,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwE-CM-wQt">
+                                <rect key="frame" x="277" y="323" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="NSh-VK-Mzf" kind="presentation" id="Jzi-be-P4O"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="¡Bienvenidos!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYq-io-hfo">
                                 <rect key="frame" x="193" y="249" width="215" height="102"/>
                                 <fontDescription key="fontDescription" name="font000000001d95ba36" family="Jurassic Park" pointSize="33"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwE-CM-wQt">
-                                <rect key="frame" x="277" y="484" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="NSh-VK-Mzf" kind="presentation" id="Jzi-be-P4O"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.90691443787862891" green="0.56596453331436236" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -165,7 +165,7 @@
         <!--View Controller-->
         <scene sceneID="EQN-LQ-oan">
             <objects>
-                <viewController id="W9b-UW-s1Y" sceneMemberID="viewController">
+                <viewController id="W9b-UW-s1Y" colorLabel="IBBuiltInLabel-Yellow" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bpB-4V-dDs"/>
                         <viewControllerLayoutGuide type="bottom" id="oa0-De-BkC"/>
@@ -264,13 +264,6 @@
                                     <action selector="botonReturn:" destination="NSh-VK-Mzf" eventType="touchUpInside" id="KUf-ZV-vsQ"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="hoy.png" translatesAutoresizingMaskIntoConstraints="NO" id="tNb-eY-heX">
-                                <rect key="frame" x="180" y="20" width="240" height="304"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="AIH-g9-LjS"/>
-                                    <constraint firstAttribute="height" constant="304" id="lS0-dc-ApS"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jis-cm-7uK">
                                 <rect key="frame" x="180" y="383" width="53" height="30"/>
                                 <state key="normal" title="Tab Bar"/>
@@ -278,6 +271,13 @@
                                     <segue destination="BKI-iR-MN9" kind="presentation" id="efW-h0-oaq"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="hoy.png" translatesAutoresizingMaskIntoConstraints="NO" id="tNb-eY-heX">
+                                <rect key="frame" x="180" y="20" width="240" height="304"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="AIH-g9-LjS"/>
+                                    <constraint firstAttribute="height" constant="304" id="lS0-dc-ApS"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
